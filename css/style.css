@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+* {
+
+    font-family: 'Poppins';
+
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+
+    list-style: none;
+
+    box-sizing: border-box;
+
+}
+
+img {
+
+    width: 150px;
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: black;
+
+    padding: 1.5rem 7rem;
+
+}
+
+header div.logo img {
+
+    width: 150px;
+
+}
+
+header nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+
+}
+
+header nav span {
+
+    background: white;
+
+    width: 2px;
+    height: 30px;
+
+}
+
+header nav ul li {
+
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    border-radius: 10px;
+
+}
+
+header nav ul.menuOptions li {
+
+    width: 100px;
+
+}
+
+header nav ul.registrationArea li {
+
+    width: 150px;
+
+}
+
+header nav ul li:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+    color: #1ED760;
+
+}
+
+#inputCheckbox {
+
+    display: none;
+
+}
+
+label {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    border-radius: 5px;
+
+    width: 35px;
+    height: 35px;
+
+}
+
+main {
+
+    background-image: url('../imagens/wallpaper.png');
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+
+    height: 100vh;
+
+    padding: 7rem 0;
+
+}
+
+main h1 {
+
+    font-size: 8rem;
+    font-weight: bolder;
+
+    color: #1ED760;
+
+    text-shadow: 0 0 2px black;
+
+    width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+main p {
+
+    color: #1ED760;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    text-shadow: 0 0 2px black;
+
+    margin: 2rem 0;
+
+}
+
+main button {
+
+    background: #1ED760;
+    color: #2941AB;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    border: none;
+
+    border-radius: 50px;
+
+    width: 250px;
+
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+main button:hover {
+
+    background: #2941AB;
+    color: #1ED760;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    box-shadow: 0 0 10px #1ED760;
+    text-shadow: 0 0 10px black;
+
+    width: 300px;
+
+}
+
+footer {
+
+    background: black;
+
+    padding: 7rem 5rem;
+
+}
+
+footer img {
+
+    margin-bottom: 2rem;
+
+}
+
+footer section.sectionDivs {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 800px;
+
+}
+
+footer .divEmpresa,
+footer .divComunidades,
+footer .divLinksUteis {
+
+    width: 250px;
+    height: 350px;
+
+}
+
+footer .divEmpresa h1,
+footer .divComunidades h1,
+footer .divLinksUteis h1 {
+
+    color: #919496;
+
+    font-size: 1rem;
+
+    padding: 1rem;
+
+    cursor: default;
+
+}
+
+footer .divEmpresa p,
+footer .divComunidades p,
+footer .divLinksUteis p {
+
+    color: white;
+
+    font-size: 1rem;
+
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+footer .divEmpresa p:hover,
+footer .divComunidades p:hover,
+footer .divLinksUteis p:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+    color: #1ED760;
+
+}
+
+footer .socialMedia {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+
+    padding: 1.5rem;
+
+}
+
+footer .socialMedia .fab {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #222326;
+    color: white;
+
+    font-size: 1.5rem;
+
+    border-radius: 50px;
+
+    text-shadow: 0 0 2px #1ED760;
+
+    width: 50px;
+    height: 50px;
+
+    transition: 0.2s;
+
+}
+
+footer .socialMedia .fab:hover {
+
+    color: #1ED760;
+
+    font-size: 2.5rem;
+
+    box-shadow: 0 0 5px #1ED760;
+    text-shadow: 0 0 5px black;
+
+    transform: scale(1.1) rotate(360deg);
+
+}
+
+footer .sectionCredits {
+
+    width: 100%;
+
+    padding: 1rem;
+
+}
+
+footer .sectionCredits .region {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 200;
+
+    width: 65px;
+
+    margin-left: 94%;
+
+}
+
+footer .sectionCredits .divInfo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    margin-top: 1rem;
+
+}
+
+footer .sectionCredits .divInfo .info {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+
+    transition: 0.5s;
+
+}
+
+footer .sectionCredits .divInfo .info p {
+
+    border-radius: 10px;
+    
+    padding: 1rem;
+
+}
+
+footer .sectionCredits .divInfo .info p:hover {
+
+    background: rgba(255, 255, 255, 0.05);
+    color: #1ED760;
+
+    cursor: pointer;
+
+}
