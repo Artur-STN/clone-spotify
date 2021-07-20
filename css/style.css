@@ -33,12 +33,6 @@ header {
 
 }
 
-header div.logo img {
-
-    width: 150px;
-
-}
-
 header nav {
 
     display: flex;
@@ -224,8 +218,6 @@ footer section.sectionDivs {
     align-items: center;
     justify-content: space-between;
 
-    width: 800px;
-
 }
 
 footer .divEmpresa,
@@ -380,7 +372,7 @@ footer .sectionCredits .divInfo .info {
 footer .sectionCredits .divInfo .info p {
 
     border-radius: 10px;
-    
+
     padding: 1rem;
 
 }
@@ -391,5 +383,275 @@ footer .sectionCredits .divInfo .info p:hover {
     color: #1ED760;
 
     cursor: pointer;
+
+}
+
+@media(max-width: 1080px) {
+
+    header {
+
+        padding: 1.5rem 2rem;
+
+    }
+
+    main h1 {
+
+        font-size: 6rem;
+
+        width: 700px;
+
+    }
+
+    footer {
+    
+        padding: 7rem 2rem;
+    
+    }
+
+    footer .sectionDivs {
+
+        flex-direction: column;
+        
+        width: 250px;
+
+    }
+
+    footer .sectionDivs .divEmpresa,
+    footer .sectionDivs .divLinksUteis {
+        
+        height: 225px;
+
+        margin-bottom: 2rem;
+    
+    }
+
+    footer .sectionDivs .divComunidades{
+        
+        height: 340px;
+
+        margin-bottom: 2rem;
+    
+    }
+
+    footer .socialMedia {
+
+        margin: 0 auto;
+
+    }
+
+    footer .sectionCredits .region {
+
+        margin: 0 auto;
+
+    }
+
+    footer .sectionCredits .divInfo {
+
+        flex-direction: column;
+
+    }
+
+    footer .sectionCredits .divInfo .info {
+
+        flex-direction: column;
+
+        width: 300px;
+
+    }
+
+    footer .sectionCredits .divInfo .info p {
+
+        text-align: center;
+
+    }
+
+    footer .divInfo .credits {
+
+        margin-top: 2rem;
+
+    }
+
+}
+
+@media(max-width: 920px) {
+
+    header {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+    header .logo img {
+
+        position: relative;
+        
+        z-index: 10;
+
+    }
+
+    main {
+
+        margin-top: 100px;
+
+    }
+
+    #inputCheckbox:checked ~ nav {
+
+        right: 0;
+
+    }
+
+    #inputCheckbox:checked ~ label {
+
+        position: fixed;
+
+        right: 32px;
+
+    }
+
+    label {
+
+        display: flex;
+
+        z-index: 3;
+
+        cursor: pointer;
+
+    }
+
+    header nav {
+
+        position: fixed;
+        top: 0;
+        right: -100vw;
+
+        flex-direction: column;
+
+        background: #000;
+
+        width: 100vw;
+        min-height: 100vh;
+
+        padding: 7rem 0 5rem 0;
+
+        transition: 0.2s;
+
+        z-index: 2;
+
+    }
+
+    header nav span {
+
+        border: none;
+
+        width: 100%;
+        height: 2px;
+
+    }
+
+    header nav ul {
+
+        flex-direction: column;
+
+        width: 100vw;
+
+    }
+
+    header nav ul.menuOptions {
+    
+        height: 240px;
+    
+    }
+
+    header nav ul.registrationArea {
+    
+        height: 150px;
+    
+    }
+
+    header nav ul.menuOptions li,
+    header nav ul.registrationArea li  {
+    
+        font-size: 1.8rem;
+
+        width: 100vw;
+
+        border-radius: 0;
+
+        padding: 1rem 0;
+    
+    }
+
+}
+
+@media(max-width: 720px) {
+
+    main {
+
+        padding: 2rem 0;
+
+    }
+
+    main h1,
+    main p {
+
+        width: 500px;
+
+        margin: 0 auto;
+
+    }
+
+    main button {
+
+        margin-top: 2rem;
+
+    }
+
+}
+
+@media(max-width: 540px) {
+
+    main h1,
+    main p {
+        
+        width: 300px;
+
+    }
+
+    main h1 {
+
+        font-size: 4rem;
+
+    }
+
+    main button {
+
+        margin-top: 2rem;
+
+    }
+
+    footer {
+
+        padding: 7rem 1rem;
+
+    }
+
+    footer .socialMedia {
+
+        width: 200px;
+
+        padding: 0;
+
+    }
+
+    footer .socialMedia .fab {
+
+        width: 40px;
+        height: 40px;
+
+    }
 
 }
